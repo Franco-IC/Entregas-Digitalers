@@ -13,8 +13,8 @@ function gastoConIva(num) {
 function map(arrNums, callback) {
     let resultado = [];
 
-    for (const num in arrNum) {
-        resultado.push(callback(Number(arrNum[num])));
+    for (const num in arrNums) {
+        resultado.push(callback(Number(arrNums[num])));
     }
 
     return resultado;
