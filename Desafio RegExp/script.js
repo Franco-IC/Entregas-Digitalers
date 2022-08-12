@@ -8,7 +8,7 @@ contraseña segura pero con las siguientes característica, que esta debe conten
 */
 
 const input = document.querySelector('#password');
-const submit = document.querySelector('#submit')
+const submit = document.querySelector('#submit');
 
 //               1 letra mayúscula, 1 minúscula, números y símbolos (sin espacios en blanco)
 const regexp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).\S{12,16}$/g;
