@@ -21,7 +21,6 @@ function map(arrNums, callback) {
 }
 
 let nums = [20, 25, '123.5', 435, 934, "43", 21, 2000.30];
-
 let numsConIva = map(nums, gastoConIva);
 
 console.log(numsConIva);
