@@ -19,9 +19,9 @@ function PasswordValido(inputElement) {
 
         if (inputElement.type === 'password' && regexp.test(inputElement.value)) {
             inputElement.isValid = true;
-            console.log('Password valida');
+            console.log('Password válida');
         } else if (inputElement.isValid === false) {
-            console.log('Password invalida');
+            console.log('Password inválida');
         }
     })
 }
@@ -32,8 +32,8 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();
 
     if (input.isValid === true) {
-        alert('enviado!');
+        alert('enviado');
     } else {
-        alert('contraseña invalida');
+        alert('contraseña inválida');
     }
 })
