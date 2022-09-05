@@ -1,0 +1,15 @@
+{
+  "name": "desafio-nodejs",
+  "version": "1.0.0",
+  "description": "uso del modulo json-server con fake data de mockaroo",
+  "main": "app.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Franco-IC/Entregas-Digitalers.git"
+  },
+  "author": "Franco Cuellar",
+  "license": "ISC"
+}
