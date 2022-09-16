@@ -31,7 +31,7 @@ app.get('/getLetra/:num', (req, res) => {
                 <a href='/getFrase'> Ir a la frase completa </a>`);
     } else {
         res.status(404).send('<h1> { error: "El parámetro ingresado es incorrecto, probá con un número entre 1-18, ej: /getLetra/8." } </h1> <br> <a href="/getFrase"> Ir a la frase completa </a> ');
-        console.log('Error 404, parámetro incorrecto ' + new Date());
+        console.log(`Error 404, parámetro incorrecto (${req.params.num}) ${new Date()}`);
     }
 });
 
@@ -46,7 +46,7 @@ app.get('/getPalabra/:num', (req, res) => {
                 <a href='/getFrase'> Ir a la frase completa </a>`);
     } else {
         res.status(404).send('<h1> { error: "El parámetro ingresado es incorrecto, probá con un número entre 1-4, ej: /getPalabra/3." } </h1> <br> <a href="/getFrase"> Ir a la frase completa </a>');
-        console.log('Error 404, parámetro incorrecto ' + new Date());
+        console.log(`Error 404, parámetro incorrecto (${req.params.num}) ${new Date()}`);
     }
 });
 
